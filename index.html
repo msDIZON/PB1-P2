@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RSA Sign Up and Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>RSA User Demo</h1>
+
+    <div id="authPanel">
+      <h2>Sign Up</h2>
+
+      <label for="full_name">Fullname:</label>
+      <input type="text" id="full_name">
+
+      <label for="uname">Username:</label>
+      <input type="text" id="uname">
+
+      <label for="bday">Birthday:</label>
+      <input type="date" id="bday">
+
+      <label for="pword">Password:</label>
+      <input type="password" id="pword">
+
+      <button onclick="signUp()">Sign Up</button>
+
+      <h2>Login</h2>
+
+      <label for="uname">Username:</label>
+      <input type="text" id="login_uname">
+
+      <label for="pword">Password:</label>
+      <input type="password" id="login_pword">
+
+      <button onclick="login()">Login</button>
+
+      <div id="message" class="message"></div>
+    </div>
+
+    <div id="welcomePanel" class="panel hidden">
+      <h2>Welcome, <span id="currentUser"></span>!</h2>
+
+      <p>Sample original message:</p>
+      <pre id="originalMessage"></pre>
+
+      <p>Encrypted message:</p>
+      <pre id="encryptedMessage"></pre>
+
+      <p>Decrypted message:</p>
+      <pre id="decryptedMessage"></pre>
+
+      <button class="logout-button" onclick="logout()">Logout</button>
+
+      <h2>What's new? Do you mind to share?</h2>
+
+      <label for="postText">What's on your Mind?:</label>
+      <input type="text" id="postText">
+      <button class="post-heading" onclick="postMessage()">Post</button>
+
+      <p>Original Post:</p>
+      <pre id="originalMessage2"></pre>
+
+      <p>Encrypted message:</p>
+      <pre id="encryptedMessage2"></pre>
+
+      <p>Decrypted message:</p>
+      <pre id="decryptedMessage2"></pre>
+
+    </div>
+  </div>
+  
+
+  <script src="js/sample.js"></script>
+</body>
+</html>
